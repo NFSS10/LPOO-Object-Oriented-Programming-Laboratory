@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.feup.nuno.asteroidsandroid">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".JogoView"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="com.feup.nuno.asteroidsandroid.JogoView"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Score_Activity">
+            <intent-filter>
+                <action android:name="com.feup.nuno.asteroidsandroid.Score_Activity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".pause_pop"
+                  android:theme="@style/Pause_Pop_Theme">
+        <intent-filter>
+            <action android:name="com.feup.nuno.asteroidsandroid.pause_pop"/>
+
+            <category android:name="android.intent.category.DEFAULT"/>
+        </intent-filter>
+    </activity>
+
+        <activity android:name=".Ajuda_pop_Activity"
+                  android:theme="@style/Pause_Pop_Theme">
+            <intent-filter>
+                <action android:name="com.feup.nuno.asteroidsandroid.Ajuda_pop_Activity"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+
+
+</application>
+
+</manifest>

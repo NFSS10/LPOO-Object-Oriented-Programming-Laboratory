@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.feup.nuno.asteroidsandroid.pause_pop"
+    android:focusable="true"
+    android:background="#82000000">
+
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text=""
+        android:id="@+id/Menu_btn"
+        android:background="@drawable/btn_home_selector"
+        android:maxHeight="75dp"
+        android:minHeight="75dp"
+        android:textSize="24dp"
+        android:layout_below="@+id/Score_textView"
+        android:layout_toLeftOf="@+id/Score_textView"
+        android:layout_toStartOf="@+id/Score_textView"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="20dp"/>
+
+    <Button
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:text=""
+        android:id="@+id/btn_resumir"
+        android:background="@drawable/btn_resumir_selector"
+        android:layout_alignTop="@+id/Menu_btn"
+        android:layout_toRightOf="@+id/Score_textView"
+        android:layout_toEndOf="@+id/Score_textView"
+        android:layout_marginLeft="30dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SCORE"
+        android:id="@+id/Score_estatico"
+        android:layout_marginTop="70dp"
+        android:textStyle="bold"
+        android:textSize="45dp"
+        android:textAlignment="center"
+        android:textColor="#e6e6e6"
+        android:layout_below="@+id/GAMEOVER"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:id="@+id/Score_textView"
+        android:layout_below="@+id/Score_estatico"
+        android:layout_alignLeft="@+id/Score_estatico"
+        android:layout_alignStart="@+id/Score_estatico"
+        android:layout_alignRight="@+id/Score_estatico"
+        android:layout_alignEnd="@+id/Score_estatico"
+        android:textAlignment="center"
+        android:textColor="#e6e6e6"
+        android:textSize="40dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paused"
+        android:id="@+id/GAMEOVER"
+        android:layout_alignParentTop="true"
+        android:textSize="47dp"
+        android:textColor="#fffefe"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+
+</RelativeLayout>
